@@ -1,0 +1,122 @@
+body
+{
+	background-color: #292929; 
+	padding-top: 1em;
+}
+*{margin:0;padding:0;}
+.fake_block
+{
+	color: #292929;
+	height: 50px;
+}
+.titlul
+{
+	font-family: Arial;
+	padding: 12px 12px;
+	text-align: center;
+	background-color: #cc0000;
+	border: 3px solid black;
+	color: white;
+}
+nav
+{
+	width:100%;
+	height:4em;
+	background-color: black;
+	position: fixed;
+	top:10px; 
+}
+nav ul
+{
+	list-style-type:none;
+}
+nav a
+{
+  font-size: 1.8em;
+  text-decoration: none;
+  color: white;
+  display: block;
+  height:100%;
+}
+nav a.active
+{
+	background-color: #cc0000;
+	color: black;
+}
+header input, header div {display:none;}
+
+ul.meniu
+{
+
+    display:flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+}
+ul.meniu>li
+{
+  flex-grow: 1;
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+  width: 100%;
+}
+ul.meniu>li>ul.submeniu
+{
+  display: none;
+}
+ul.meniu>li:hover>ul.submeniu
+{
+  display: block;
+  background-color: black;
+}
+ul.meniu li:hover
+{
+  background-color: #cc0000;
+  transition-property: background-color;
+  transition-duration: 0.6s;
+}
+.sectiune
+{
+	display: flex;
+	flex-direction:column;
+	width: auto;
+	font-size: 18px;
+	font-family: Arial;
+	background-color: black;
+	margin: auto;
+	padding: 2px;
+	border: 5px solid #cc0000;
+	color: white;
+}
+.sectiune > p
+{
+	display: flex;
+	flex-direction:row;
+	text-align: center;
+}
+#coloane
+{
+  box-sizing:border-box;
+  display: flex; 
+  flex-direction: column;
+  flex-flow: nowrap;
+  justify-content: space-around;
+  background-size:cover;
+  width: 100%;
+  padding: 10px;
+}
+.contacte
+{
+	display: flex;
+	flex-direction: column;
+}
+footer 
+{
+	text-align: center;
+	position: absolute;
+	bottom: 1rem;
+	width: 100%;
+	height: 2.5rem;     
+	color: white;      
+}

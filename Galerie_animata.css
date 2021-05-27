@@ -1,0 +1,247 @@
+body
+{
+	background-color: #292929; 
+	padding-top: 1em;
+}
+*{margin:0;padding:0;}
+.fake_block
+{
+	color: #292929;
+	height: 50px;
+}
+.titlul
+{
+	font-family: Arial;
+	padding: 12px 12px;
+	text-align: center;
+	background-color: #cc0000;
+	border: 3px solid black;
+	color: white;
+}
+nav
+{
+	width:100%;
+	height:4em;
+	background-color: black;
+	position: fixed;
+	top: 10px; 
+}
+nav ul
+{
+	list-style-type:none;
+}
+nav a
+{
+  font-size: 1.8em;
+  text-decoration: none;
+  color: white;
+  display: block;
+  height:100%;
+}
+nav a.active
+{
+	background-color: #cc0000;
+	color: black;
+}
+header input, header div {display:none;}
+
+ul.meniu
+{
+
+    display:flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+}
+ul.meniu>li
+{
+  flex-grow: 1;
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+  width: 100%;
+}
+ul.meniu>li>ul.submeniu
+{
+  display: none;
+}
+ul.meniu>li:hover>ul.submeniu
+{
+  display: block;
+  background-color: black;
+}
+ul.meniu li:hover
+{
+  background-color: #cc0000;
+  transition-property: background-color;
+  transition-duration: 0.6s;
+}
+.centrat
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.buton_centrat
+{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 10%;
+    height: 10%;
+}
+* 
+{
+    box-sizing: border-box;
+}
+  
+#button_alb_negru
+{
+    background-color: #cc0000;
+    width: 150px;
+    height: 60px;
+}
+
+#button_random
+{
+    background-color: #cc0000;
+    width: 150px;
+    height: 60px;
+}
+
+.container 
+{
+    position: relative;
+}
+  
+.Pozitie
+{
+    display: none;
+}
+
+.cursor 
+{
+    cursor: pointer;
+}
+
+.slide_precedent,.slide_urmator 
+{
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.slide_urmator 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+ }
+  
+.slide_precedent:hover, .slide_urmator:hover 
+{
+    transition-duration: 0.6s;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #cc0000;
+}
+
+.nr_ordine
+{
+    left:25%;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.caption-container 
+{
+    text-align: center;
+    padding: 2px 16px;
+    color: white;
+}
+#caption
+{
+    background-color: #cc0000;
+    font-family: Arial;
+    font-size: 14px;
+}
+  
+.column 
+{
+    float: left;
+    padding: 10px;
+    width: 14.2%;
+}
+
+.column:hover
+{
+    background-color: #ffffff;
+}
+  
+.slide-show 
+{
+    width: 100%;
+    transition-duration: 0.6s;
+    opacity: 0.6;
+}
+
+.active, .slide-show:hover 
+{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+input[type=text], select
+{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+      
+input[type=submit] 
+{
+    width: 30%;
+    background-color: #292929;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+      
+input[type=submit]:hover 
+{
+    transition-duration: 0.6s;
+    color: #292929;
+    background-color: white;
+}
+.formular 
+{
+    font-family: Arial;
+    font-size: 22px;
+    color: white;
+    width: 25%;
+    text-align: center;
+    margin:auto;
+    border-radius: 5px;
+    background-color: #cc0000;
+    padding: 20px;
+    
+}
